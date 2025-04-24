@@ -1,3 +1,5 @@
+import "./style.css"
+
 const MyThirdComponent = () => {
     return (
         <div>
@@ -6,11 +8,19 @@ const MyThirdComponent = () => {
     )
 }
 
+//JSX
+// Fragment
 const MySecondComponent = () => {
     return (
-        <div>
+        <>
+            <div>
             My Second Component
-        </div>
+            </div>
+            <div className="child"
+                style={{borderRadius: "10px"}}
+            >child</div>
+        </>
+        
     )
 }
 
