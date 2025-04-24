@@ -3,14 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+// Component = HTML + CSS + JavaScript
+const MyComponent = () => {
+  return (
+    <div>Hello React With LeeMinWang</div>
+  );
+}
+
 const App = () => {
   const [count, setCount] = useState(0)
-
-  const myFunction = () => {
-    console.log("Đây là lambda expression")
-  }
-
-  myFunction()
 
   return (
     <>
@@ -22,7 +23,10 @@ const App = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Hello World & Lê Minh Quang Siêu cấp đẹp trai</h1>
+      <h1>Hello World & Lê Minh Quang Siêu cấp đẹp trai No.1 vũ trụ</h1>
+
+      <MyComponent/>
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
