@@ -19,7 +19,7 @@ const MySecondComponent = () => {
     }
     return (
         <>
-            <div>
+            <div className="Child2">
                 My Second Component
             </div>
             <div className="child"
