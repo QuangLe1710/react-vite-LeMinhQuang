@@ -5,6 +5,12 @@ import ReactLogo from './assets/react.svg'
 
 const App = () => {
 
+  const leminwang = "LeMinhQuang";
+  const age = 21 ;
+  const data = {
+    address : "HaNoi",
+    phone : "0348773921"
+  }
 
   return (
     <div className="todo-container">
@@ -13,7 +19,11 @@ const App = () => {
 
         <ToDoNew/>
 
-        <ToDoData/>
+        <ToDoData
+          name={leminwang}
+          age={age}
+          data={data}
+        />
 
         <div className='todo-image'>
           <img src={ReactLogo} alt="logo React" className="logo react" />
